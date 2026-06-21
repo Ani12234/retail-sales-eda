@@ -74,7 +74,7 @@ st.markdown("""
 # Load data helper
 @st.cache_data
 def load_data():
-    clean_csv_path = "d:/data_analsyt/Retail Sales Data Analysis Dashboard/retail_sales_clean.csv"
+    clean_csv_path = "retail_sales_clean.csv"
     if os.path.exists(clean_csv_path):
         df = pd.read_csv(clean_csv_path)
         df['order_date'] = pd.to_datetime(df['order_date']).dt.date
@@ -83,7 +83,7 @@ def load_data():
 
 # Load summary helper
 def load_summary():
-    summary_path = "d:/data_analsyt/Retail Sales Data Analysis Dashboard/analysis_summary.json"
+    summary_path = "analysis_summary.json"
     if os.path.exists(summary_path):
         with open(summary_path, 'r') as f:
             return json.load(f)

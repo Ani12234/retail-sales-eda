@@ -6,7 +6,7 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils.dataframe import dataframe_to_rows
 
 def clean_data():
-    raw_path = "d:/data_analsyt/Retail Sales Data Analysis Dashboard/retail_sales_raw.csv"
+    raw_path = "retail_sales_raw.csv"
     if not os.path.exists(raw_path):
         print(f"Error: Raw dataset not found at {raw_path}! Please run data_generation.py first.")
         return
@@ -96,7 +96,7 @@ def clean_data():
     
     # 5. Export clean datasets
     print("\n--- Step 5: Exporting Datasets ---")
-    out_dir = "d:/data_analsyt/Retail Sales Data Analysis Dashboard"
+    out_dir = "."
     
     # Export to CSV
     csv_out = os.path.join(out_dir, "retail_sales_clean.csv")

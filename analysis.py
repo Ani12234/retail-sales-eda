@@ -4,7 +4,7 @@ import json
 import os
 
 def analyze_data():
-    clean_path = "d:/data_analsyt/Retail Sales Data Analysis Dashboard/retail_sales_clean.csv"
+    clean_path = "retail_sales_clean.csv"
     if not os.path.exists(clean_path):
         print(f"Error: Clean dataset not found at {clean_path}! Please run data_cleaning.py first.")
         return
@@ -84,7 +84,7 @@ def analyze_data():
         "revenue_by_region": region_rev['revenue'].to_dict()
     }
     
-    summary_path = "d:/data_analsyt/Retail Sales Data Analysis Dashboard/analysis_summary.json"
+    summary_path = "analysis_summary.json"
     with open(summary_path, 'w') as f:
         json.dump(summary_data, f, indent=4)
     print(f"\nSuccessfully exported analysis summary: {summary_path}")

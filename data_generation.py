@@ -383,8 +383,7 @@ def generate_dataset():
     assert len(df_raw_final) == total_rows, f"Generated {len(df_raw_final)} rows, expected {total_rows}!"
     
     # Write to CSV
-    os.makedirs("d:/data_analsyt/Retail Sales Data Analysis Dashboard", exist_ok=True)
-    df_raw_final.to_csv("d:/data_analsyt/Retail Sales Data Analysis Dashboard/retail_sales_raw.csv", index=False)
+    df_raw_final.to_csv("retail_sales_raw.csv", index=False)
     print("Successfully exported raw dataset to retail_sales_raw.csv")
     
 if __name__ == "__main__":
