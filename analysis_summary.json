@@ -1,0 +1,40 @@
+{
+    "metrics": {
+        "total_revenue": 4800937.52,
+        "total_orders": 9700,
+        "q1_revenue": 1134986.15,
+        "q2_revenue": 1134958.02,
+        "q3_revenue": 1134983.04,
+        "q4_revenue": 1396010.31,
+        "q_baseline_average": 1134975.7366666666,
+        "q4_revenue_increase_pct": 22.999132483657426,
+        "bottom_3_regions": [
+            "New England",
+            "Mountain",
+            "Northwest"
+        ],
+        "bottom_3_revenue": 864203.13,
+        "bottom_3_revenue_share_pct": 18.000716035146404,
+        "shortfall_vs_avg_pct": 11.9992839648536
+    },
+    "revenue_by_category": {
+        "Beauty": 163785.77,
+        "Books": 68286.06,
+        "Clothing": 278698.59,
+        "Electronics": 3342390.31,
+        "Home & Kitchen": 653269.62,
+        "Sports": 294507.17
+    },
+    "revenue_by_region": {
+        "Southwest": 811119.58,
+        "Mid-Atlantic": 624100.01,
+        "West": 581174.18,
+        "Northeast": 576106.24,
+        "Southeast": 480081.25,
+        "South": 432087.5,
+        "Midwest": 432065.63,
+        "Northwest": 336065.61,
+        "Mountain": 288081.27,
+        "New England": 240056.25
+    }
+}
